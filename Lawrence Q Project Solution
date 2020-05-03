@@ -6,7 +6,6 @@ output: html_document
 ---
 
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -68,7 +67,7 @@ intervalWithMaxNbSteps
 
 #  Imputing missing values
 Calculate and report the total number of missing values in the dataset 
-(i.e. the total number of rows with 𝙽𝙰s
+(i.e. the total number of rows with ð½ð°s
 
 ```{r}
 total_no_NA <- sum(!(is.na(activity$steps)))
@@ -118,7 +117,7 @@ medianStepsPerDayNoNA
 ##  Are there differences in activity patterns between weekdays and weekends?
 
 
-Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.
+Create a new factor variable in the dataset with two levels â âweekdayâ and âweekendâ indicating whether a given date is a weekday or weekend day.
 
 ```{r}
 activityNoNA$date <- as.Date(strptime(activityNoNA$date, format="%Y-%m-%d"))
@@ -138,7 +137,7 @@ head(stepsByDay)
 ```
 
 
-Make a panel plot containing a time series plot (i.e. 𝚝𝚢𝚙𝚎 = “𝚕”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or 
+Make a panel plot containing a time series plot (i.e. ðð¢ðð = âðâ) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or 
 # weekend days (y-axis).
 
 
